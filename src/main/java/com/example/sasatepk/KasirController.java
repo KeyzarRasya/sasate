@@ -18,7 +18,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-public class KasirController {
+public class    KasirController {
 
     private Map<String, String> idMenu = Map.ofEntries(
             Map.entry("1", "Sate Bakar"),
@@ -61,7 +61,7 @@ public class KasirController {
 
     private Double totalPrice = 0d;
 
-    private float y = 20f;
+    private float y = 39f;
 
     private float reportY = 14f;
 
@@ -88,7 +88,7 @@ public class KasirController {
         total.setText("Rp. " + totalPrice.toString());
 
         // Adjust y-coordinate for next order pane
-        y += 60;
+        y += 89;
 
         // Clear input fields
         menuId.setText("");
@@ -138,33 +138,28 @@ public class KasirController {
 
     private Pane createPaneOrder(String menu, Integer qty, Double price) {
         Pane pane = new Pane();
-        pane.setLayoutX(11.0);
+        pane.setLayoutX(25.0);
         pane.setLayoutY(y);
-        pane.setPrefSize(342.0, 40.0);
-        pane.setStyle("-fx-background-color: #FFF;");
+        pane.setPrefHeight(68.0);
+        pane.setPrefWidth(1215.0);
+        pane.setStyle("-fx-background-color: #fff;");
 
-        // Menu text
+        // Menu text layoutX="25.0" layoutY="39.0" prefHeight="68.0" prefWidth="1215.0" style="-fx-background-color: #fff;"
         Text menuText = new Text();
-        menuText.setLayoutX(14.0);
-        menuText.setLayoutY(25.0);
-        menuText.setStrokeType(javafx.scene.shape.StrokeType.OUTSIDE);
-        menuText.setStrokeWidth(0.0);
+        menuText.setLayoutX(30.0);
+        menuText.setLayoutY(38.0);
         menuText.setText(menu);
 
         // Quantity text
         Text qtyText = new Text();
-        qtyText.setLayoutX(188.0);
-        qtyText.setLayoutY(25.0);
-        qtyText.setStrokeType(javafx.scene.shape.StrokeType.OUTSIDE);
-        qtyText.setStrokeWidth(0.0);
+        qtyText.setLayoutX(433.0);
+        qtyText.setLayoutY(39.0);
         qtyText.setText(qty.toString());
 
         // Price text
         Text priceText = new Text();
-        priceText.setLayoutX(270.0);
-        priceText.setLayoutY(25.0);
-        priceText.setStrokeType(javafx.scene.shape.StrokeType.OUTSIDE);
-        priceText.setStrokeWidth(0.0);
+        priceText.setLayoutX(903.0);
+        priceText.setLayoutY(39.0);
         priceText.setText(price.toString());
 
         // Add to total price
