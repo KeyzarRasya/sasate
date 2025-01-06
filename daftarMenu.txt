@@ -1,0 +1,2 @@
+1,Ayam Bakar,25000;
+2,Es Teh,5000;

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #304F33; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sasatepk.TambahMenuController">
+    <children>
+        <Pane layoutX="390.0" layoutY="236.0" prefHeight="248.0" prefWidth="500.0" style="-fx-background-color: #668769;">
+         <children>
+            <TextField fx:id="addID" layoutX="74.0" layoutY="82.0" prefHeight="25.0" prefWidth="31.0" promptText="id" />
+            <TextField fx:id="addProduk" layoutX="117.0" layoutY="83.0" promptText="Nama Produk" />
+            <TextField fx:id="addHargaJual" layoutX="277.0" layoutY="83.0" prefHeight="25.0" prefWidth="149.0" promptText="Rp." />
+            <Button fx:id="simpan" layoutX="260.0" layoutY="142.0" mnemonicParsing="false" onAction="#onClickSimpan" style="-fx-background-color: #02b523;" text="Simpan" textFill="WHITE" />
+            <Button fx:id="hapus" layoutX="184.0" layoutY="142.0" mnemonicParsing="false" onAction="#onClickHapus" style="-fx-background-color: #c21206;" text="Batal" textFill="WHITE" />
+            <Button fx:id="back" layoutX="195.0" layoutY="194.0" mnemonicParsing="false" onAction="#onBack" prefHeight="39.0" prefWidth="115.0" style="-fx-background-color: #03045e;" text="Back to Menu" textFill="WHITE" />
+         </children></Pane>
+    </children>
+</AnchorPane>
